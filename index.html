@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <header class="navbar">
+
+        <!-- Left Section -->
+        <div class="nav-left">
+
+            <div class="logo-circle">
+                <img src="icons/logo.svg" alt="Spotify Logo">
+            </div>
+            
+            <button class="hamburger">
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </button>
+
+
+        </div>
+
+        <!-- Center Section -->
+        <div class="nav-center">
+            <div class="home-btn">
+                <img src="icons/home.svg" alt="Home Icon">
+            </div>
+            <!-- Search Bar -->
+            <div class="search-container">
+
+                <div class="search-icon">
+                    <img src="icons/search.svg" alt="Search">
+                </div>
+
+                <input type="text" placeholder="What do you want to play?">
+
+                <div class="divider"></div>
+
+                <div class="browse-icon">
+                    <img src="icons/library.svg" alt="Browse">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Section -->
+        <div class="nav-right">
+            <div class="feature">
+                <a class="premium" href="#">Premium</a>
+                <a class="support" href="#">Support</a>
+                <a class="download" href="#">Download</a>
+            </div>
+
+            <span class="line"></span>
+
+            <a href="#" class="install-app">
+                <img src="icons/install.svg" alt="">
+                Install App
+            </a>
+
+            <a href="#">Sign up</a>
+
+            <button class="login-btn">
+                Log in
+            </button>
+
+        </div>
+    </header>
+    <div class="main-layout">
+
+        <!-- LEFT SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="library-header">
+                <h3>Your Library</h3>
+
+                <button class="create-btn">
+                    + Create
+                </button>
+            </div>
+
+            <div class="library-card">
+                <h4>Create your first playlist</h4>
+                <p>It's easy, we'll help you</p>
+
+                <button>Create playlist</button>
+            </div>
+
+            <div class="library-card">
+                <h4>Let's find some podcasts to follow</h4>
+                <p>We'll keep you updated on new episodes</p>
+
+                <button>Browse podcasts</button>
+            </div>
+
+            <div class="footer-links">
+                <span>Legal</span>
+                <span>Safety & Privacy Center</span>
+                <span>Privacy Policy</span>
+                <span>Cookies</span>
+                <span>About Ads</span>
+                <span>Accessibility</span>
+                
+            </div>
+
+            <button class="language-btn">
+                <img src="icons/language.svg" alt="language">
+                English
+            </button>
+
+
+
+        </aside>
+
+        <div class="hamBurger-content  ham-hide">
+            <div class="head">
+
+                <div class="app-info">
+                    <div class="app-logo">
+                        <img src="icons/logo.svg" alt="spotify logo">
+                    </div>
+                    <div class="app-name">
+                        <h3>Spotify</h3>
+                    </div>
+                </div>
+                
+                <button id ="cancel-icon">
+                    <img  src="icons/cancel.svg" alt="close ham-burger">
+                </button>
+            </div>
+
+            <hr class="separation">
+
+
+            <div class="nav-buttons">
+                <div class="home">
+                    <a href="index.html" class="go-to-home">
+                        <img src="icons/home.svg" alt="home">
+                        Home
+                    </a>
+                </div>
+                <div class="search">
+                    <button class="search-item">
+                        <img src="icons/search.svg" alt="search">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <hr class="separation">
+
+            <div class="tool">
+                <a href="#" class="premium">> Premium</a>
+                <a href="#" class="support">> Support</a>
+                <a href="#" class="download">> Download</a>
+            </div>
+
+            <hr class="separation">
+
+            <div class="my-library">
+                <div class="my-library-header">
+                    <img src="icons/library.svg" alt="my-library">
+                    Your Library
+                </div>
+                <div class="plus">+</div>
+                
+            </div>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+
+        <section class="content">
+
+            <!-- Trending Songs -->
+
+            <div class="section-title">
+                <h2>Trending songs</h2>
+                <span>Show all</span>
+            </div>
+
+            <div class="songs-row">
+
+                <div class="song-card" data-song="Shree Hanuman Chalisa.mp3">
+                    <div class="song-image">
+                        <img class="song-image" src="https://i.scdn.co/image/ab67616d00001e025182ea98b2ea623977917597"
+                            alt="Shree Hanuman Chalisa">
+                        <div class="hide" id="play-song">
+                            <img src="icons/play.svg" alt="play" id="play">
+                        </div>
+                    </div>
+                    <h4>Shree Hanuman Chalisa</h4>
+                    <p>Hariharan, Lalit Sen, Chander</p>
+                </div>
+
+                <div class="song-card" data-song="Sadi Sun - HARSH NUSSI.mp3">
+                    <div class="song-image">
+                        <img class="song-image" src="https://i.scdn.co/image/ab67616d00001e02c8096979918cf4a5d4436e3f"
+                            alt="Sadi Sun">
+                        <div class="hide" id="play-song">
+                            <img src="icons/play.svg" alt="play" id="play">
+                        </div>
+                    </div>
+                    <h4>Sadi Sun</h4>
+                    <p>Harsh Nussi</p>
+                </div>
+
+                <div class="song-card" data-song="Udi Udi - SouthMelody.mp3">
+                    <div class="song-image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0221d6e1053df28c5a33208c1a" alt="Udi Udi"
+                            class="song-image">
+                        <div class="hide" id="play-song">
+                            <img src="icons/play.svg" alt="play" id="play">
+                        </div>
+                    </div>
+                    <h4>Udi Udi</h4>
+                    <p>Aneesh, Sarkar, Hruday</p>
+                </div>
+
+                <div class="song-card" data-song="Massa-Massa-Anantha-Sriram-NaaSongs.mp3">
+                    <div class="song-image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02506c34ad396b37cd0d454726" alt="Massa Massa"
+                            class="song-image">
+                        <div class="hide" id="play-song">
+                            <img src="icons/play.svg" alt="play" id="play">
+                        </div>
+                    </div>
+                    <h4>Massa Massa(TELUGU)</h4>
+                    <p>A.R. Rahman, Vishal Mishra, Anantha Sreeram</p>
+                </div>
+
+                <div class="song-card" data-song="Aarzu - DjBaap.mp3">
+                    <div class="song-image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020c28f02f30c669201ac4471d" alt="Aarzu"
+                            class="song-image">
+                        <div class="hide" id="play-song">
+                            <img src="icons/play.svg" alt="play" id="play">
+                        </div>
+                    </div>
+                    <h4>Aarzu</h4>
+                    <p>Noor, Khan , Madhurxo</p>
+                </div>
+
+            </div>
+
+
+            <!-- Popular Artists -->
+
+            <div class="section-title">
+                <h2>Popular artists</h2>
+                <span>Show all</span>
+            </div>
+
+            <div class="artists-row">
+
+                <div class="artist-card">
+                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="Pritam"
+                        class="artist-image">
+                    <h4>Pritam</h4>
+                    <p>Artist</p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="A.R. Rahman"
+                        class="artist-image">
+                    <h4>A.R. Rahman</h4>
+                    <p>Artist</p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Arijit Singh"
+                        class="artist-image">
+                    <h4>Arijit Singh</h4>
+                    <p>Artist</p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e" alt="Sachin-Jigar"
+                        class="artist-image">
+                    <h4>Sachin-Jigar</h4>
+                    <p>Artist</p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" alt="Vishal-Shekhar"
+                        class="artist-image">
+                    <h4>Vishal-Shekhar</h4>
+                    <p>Artist</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="playback hidden">
+                <div class="currentduration"></div>
+                <div class="Duration"></div>
+                <div class="timeline">
+                    <div class="running-timeline"></div>
+                </div>
+                <div class="playback-btn">
+
+                    <button class="previous-btn">
+                        <img src="icons/previous.svg" alt="">
+                    </button>
+
+                    <button class="play-btn">
+                        <img src="icons/pause.svg" alt="">
+                    </button>
+
+                    <button class="next-btn">
+                        <img src="icons/next.svg" alt="">
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
