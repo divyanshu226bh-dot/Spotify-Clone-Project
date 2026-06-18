@@ -927,6 +927,11 @@ body {
   transition: 0.3s;
 }
 
+.current-Song-Name{
+  color: white;
+  font-weight: 600;
+}
+
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -990,6 +995,8 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+
+  margin-top: 35px;
 }
 .Duration {
   position: fixed;
@@ -1002,6 +1009,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  margin-top: 35px;
 }
 
 @media screen and (min-width: 1750px) {

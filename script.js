@@ -69,9 +69,10 @@ async function main() {
 }
 main();
 let timeline = document.querySelector(".running-timeline");
+let currentSongName = document.querySelector(".current-Song-Name");
 
 function playSong(index) {
-
+    currentSongName.innerHTML = decodeURIComponent(playList[index].split("/").pop().replace(".mp3", " "));
     timeline.style.width = "0%";
     currentAudio.pause();
     currentAudio.src = playList[index];
@@ -113,6 +114,9 @@ nextBtn.addEventListener("click", () => {
     currentAudio.src = playList[currentSongIndex];
     currentAudio.play();
 
+    currentSongName.innerHTML = decodeURIComponent(playList[currentSongIndex].split("/").pop().replace(".mp3", " ")).replace(" - ", " ");
+
+
 });
 
 previousBtn.addEventListener("click", () => {
@@ -125,6 +129,8 @@ previousBtn.addEventListener("click", () => {
 
     currentAudio.src = playList[currentSongIndex];
     currentAudio.play();
+
+    currentSongName.innerHTML = decodeURIComponent(playList[currentSongIndex].split("/").pop().replace(".mp3", " "));
 
 });
 
@@ -219,6 +225,7 @@ currentAudio.addEventListener("ended" , ()=>{
 
   playSong(currentSongIndex);
 })
+
 
 
 
