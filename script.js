@@ -190,6 +190,25 @@ hamBtn.addEventListener("click", ()=>{
   })
 })
 
+let searchInput = document.querySelector(".search-input");
+let song_cards = document.querySelectorAll(".song-card");
+
+searchInput.addEventListener("input",()=>{
+  let SearchText = searchInput.value.toLowerCase();
+
+  song_cards.forEach(card =>{
+    let songName = card.dataset.song.toLowerCase();
+
+    if(songName.includes(SearchText)){
+      card.style.display = "block";
+    }
+    else{
+      card.style.display = "none";
+    }
+
+  })
+})
+
 
 
 
