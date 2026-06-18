@@ -209,6 +209,17 @@ searchInput.addEventListener("input",()=>{
   })
 })
 
+currentAudio.addEventListener("ended" , ()=>{
+
+  currentSongIndex+=1;
+
+  if(currentSongIndex >= playList.length){
+    currentSongIndex =0;
+  }
+
+  playSong(currentSongIndex);
+})
+
 
 
 
